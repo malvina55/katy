@@ -4,10 +4,14 @@ let year = +prompt('Введите свой год рождения')
 let cur = +prompt('Введите нынешний год')
 
 function param(a, b, c) {
-    let sum = a + ' ' + (c - b) + ' лет';
+    let sum = a + ' ' + ',' + 'Ваш возраст ' + (c - b) + 'лет';
     return sum
 }
 console.log(param(names, year, cur));
+
+
+
+//2 задание//...
 
 let one = +prompt('Введите количество примеров');
 let minNumber = +prompt('Введите наименьшее число');
@@ -21,7 +25,7 @@ function randSym() {
     return Math.floor(Math.random() * (6 - 1) + 1)
 }
 
-//2 задание//
+
 for (let i = 1; i < one; i++) {
     let odin = rand(minNumber, maxNumber),
         two = rand(minNumber, maxNumber),
